@@ -6,6 +6,9 @@ const MainContainer = () => {
   return (
     <main>
       <HeroContainer />
+
+      {/*THEMES SECTION BELOW */}
+
       <section id="themes">
         <h2>Mest etterspurte tema</h2>
         <div id="themes-container">
@@ -41,8 +44,15 @@ const MainContainer = () => {
           </article>
         </div>
       </section>
-      <section>
+
+      {/* HOW IT WORKS SECTION BELOW */}
+      <section id="how-it-works">
         <h3>Slik fungerer det for deg</h3>
+        <div id="hiw-container">
+          <article></article>
+          <article></article>
+          <article></article>
+        </div>
       </section>
     </main>
   );
