@@ -5,7 +5,9 @@
     font-family: sans-serif; 
     list-style-type: none;
 }
-
+button{
+    cursor: pointer;
+}
 :root {
     --sans-serif: 'Open Sans', sans-serif; 
     --serif: 'Playfair Display', serif; 
