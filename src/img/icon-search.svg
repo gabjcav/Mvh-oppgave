@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-search-icon">
+      <rect width="26" height="26"/>
+    </clipPath>
+  </defs>
+  <g id="search-icon" clip-path="url(#clip-search-icon)">
+    <rect width="26" height="26" fill="#fff"/>
+    <g id="search-icon-2" data-name="search-icon">
+      <rect id="bg" width="26" height="26" fill="none"/>
+      <circle id="glass" cx="6" cy="6" r="6" stroke-width="2" transform="translate(5 5)" stroke="#7863d7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+      <line id="stem" x1="6" y1="6" transform="translate(15.239 15.239)" fill="none" stroke="#7863d7" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
