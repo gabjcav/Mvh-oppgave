@@ -1,16 +1,16 @@
 * {
-    box-sizing: border-box; 
-    padding: 0; 
-    margin: 0; 
-    font-family: sans-serif; 
-    list-style-type: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  list-style-type: none;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 :root {
-    --sans-serif: 'Open Sans', sans-serif; 
-    --serif: 'Playfair Display', serif; 
+  --sans-serif: "Open Sans", sans-serif;
+  --serif: "Playfair Display", serif;
 
-    --purple: #7867d4; 
+  --color-purple: #7867d4;
 }
