@@ -3,24 +3,28 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   padding: 40px;
   background-color: #e0e0e0;
-  height: 15vh;
+  height: 15%;
 
-  #mail-link {
-    color: black;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    text-decoration-color: var(--color-purple);
-    font-family: var(--sans-serif);
-    font-size: 1.2rem;
-    :visited {
-      color: rgb(20, 20, 20);
+  #mail-link-container {
+    #mail-link {
+      color: black;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      text-decoration-color: var(--color-purple);
+      font-family: var(--sans-serif);
+      font-size: 1.2rem;
+      margin-left: 10%;
+      :visited {
+        color: rgb(20, 20, 20);
+      }
     }
   }
 
   .list-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+
     li {
       margin-bottom: 10px;
       p {
@@ -40,10 +44,15 @@ footer {
       }
     }
   }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  footer {
     li {
       font-size: 0.8rem;
+    }
+    #press {
+      margin-left: 5%;
     }
   }
 }

@@ -28,12 +28,12 @@ const HowItWorksContainer = () => {
     <section id="how-it-works">
       <h4>Slik fungerer det for deg</h4>
       <div id="hiw-container">
-        {howItWorksArr.map((step) => {
+        {howItWorksArr.map((info) => {
           return (
             <article>
-              <img src={step.image} alt="decoration" />
-              <h5>{step.title}</h5>
-              <p>{step.description}</p>
+              <img src={info.image} alt="decoration" />
+              <h5>{info.title}</h5>
+              <p>{info.description}</p>
             </article>
           );
         })}

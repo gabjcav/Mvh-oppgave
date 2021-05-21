@@ -4,9 +4,11 @@ import "./index.scss";
 const FooterContainer = () => {
   return (
     <footer>
-      <a id="mail-link" href="mailto:post@mvh.no">
-        post@mvh.no
-      </a>
+      <div id="mail-link-container">
+        <a id="mail-link" href="mailto:post@mvh.no">
+          post@mvh.no
+        </a>
+      </div>
       <section className="list-container">
         <ul>
           <li>
@@ -36,7 +38,7 @@ const FooterContainer = () => {
             <a href="/">Min Side</a>
           </li>
         </ul>
-        <ul>
+        <ul id="press">
           <li>
             <p>PRESSE</p>
           </li>
