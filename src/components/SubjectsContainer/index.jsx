@@ -3,13 +3,13 @@ import "./index.scss";
 import iconArrow from "../../img/icon-arrow.svg";
 
 const SubjectsContainer = () => {
-  let subjects = ["Design", "Reklame", "Backend", "Frontend", "UX"];
+  let subjectsArr = ["Design", "Reklame", "Backend", "Frontend", "UX"];
 
   return (
     <section id="subjects">
       <h3>Mest etterspurte tema</h3>
       <div id="subjects-container">
-        {subjects.map((subject) => {
+        {subjectsArr.map((subject) => {
           return (
             <article>
               <p>{subject}</p>
