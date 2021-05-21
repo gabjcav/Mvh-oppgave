@@ -1,0 +1,15 @@
+main {
+  min-height: 100vh;
+
+  #how-it-works-container {
+    padding: 40px;
+    h4 {
+      font-family: var(--sans-serif);
+      margin-bottom: 2%;
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 768px) {
+  }
+}
