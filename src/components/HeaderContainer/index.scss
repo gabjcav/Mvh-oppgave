@@ -1,15 +1,19 @@
 header {
   nav {
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    #logo {
+      padding-left: 30px;
+    }
     #container {
       display: flex;
       flex-direction: row;
       gap: 30px;
       align-items: center;
+      padding-right: 30px;
       #faq-link {
         font-size: var(--font-size-sm);
         color: black;
@@ -52,7 +56,11 @@ header {
 
   @media (max-width: 768px) {
     nav {
+      #logo {
+        padding-left: 0;
+      }
       #container {
+        padding-right: 0;
         #faq-link {
           font-size: var(--font-size-2xsm);
         }
