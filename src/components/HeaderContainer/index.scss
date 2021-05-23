@@ -11,7 +11,7 @@ header {
       gap: 30px;
       align-items: center;
       #faq-link {
-        font-size: 0.8rem;
+        font-size: var(--font-size-sm);
         color: black;
         // text-decoration: underline;
         // text-decoration-color: var(--color-purple);
@@ -43,7 +43,7 @@ header {
         align-items: center;
         font-weight: bold;
         border-radius: 15px;
-        font-size: 0.6rem;
+        font-size: var(--font-size-xsm);
         padding: 10px;
         color: var(--color-purple);
         border: 1px solid var(--color-light-green);
@@ -61,8 +61,13 @@ header {
 
   @media (max-width: 768px) {
     nav {
-      button {
-        font-size: 0.5rem;
+      #container {
+        #faq-link {
+          font-size: var(--font-size-2xsm);
+        }
+        button {
+          font-size: var(--font-size-2xsm);
+        }
       }
     }
   }

@@ -21,7 +21,7 @@ const FooterContainer = () => {
             <a href="/">Kontakt oss</a>
           </li>
           <li>
-            <a href="/">Ofte Stilte spørsmål</a>
+            <a href="/">Ofte stilte spørsmål</a>
           </li>
         </ul>
         <ul>
@@ -35,7 +35,7 @@ const FooterContainer = () => {
             <a href="/">Betingelser</a>
           </li>
           <li>
-            <a href="/">Min Side</a>
+            <a href="/">Min side</a>
           </li>
         </ul>
         <ul id="press">

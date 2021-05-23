@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import iconArrow from "../../img/icon-arrow.svg";
-import { subjectData } from "../../config/subjectData";
+import { subjectData } from "../../utils/subjectData";
 import { v4 as uuidv4 } from "uuid";
 const SubjectsContainer = () => {
   return (
@@ -12,7 +12,7 @@ const SubjectsContainer = () => {
           return (
             <article key={uuidv4()}>
               <p>{subject}</p>
-              <button className="subject-btn">
+              <button id="subject-btn">
                 <img src={iconArrow} alt={`Arrow icon for ${subject}`} />
               </button>
             </article>

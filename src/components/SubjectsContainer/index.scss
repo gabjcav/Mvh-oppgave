@@ -3,7 +3,7 @@
   h3 {
     font-family: var(--sans-serif);
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-size: var(--font-size-2xl);
   }
   #subjects-container {
     display: grid;
@@ -16,12 +16,12 @@
       height: 60px;
       min-width: 15%;
       display: flex;
-      font-size: 1.2rem;
+      font-size: var(--font-size-lg);
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       border-radius: 10px;
-      .subject-btn {
+      #subject-btn {
         width: 40px;
         height: 40px;
         background-color: white;

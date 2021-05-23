@@ -10,7 +10,7 @@
   h1,
   h2 {
     font-family: var(--serif);
-    font-size: 4.2rem;
+    font-size: var(--font-size-6xl);
     font-weight: 300;
   }
   p {
@@ -19,6 +19,7 @@
   #searchbar-container {
     display: flex;
     flex-direction: column;
+    position: relative;
     #searchbar {
       margin-top: 3%;
       display: flex;
@@ -31,13 +32,13 @@
       }
       input {
         font-family: var(--sans-serif);
-        font-size: 0.9rem;
+        font-size: var(--font-size-sm);
         padding: 20px;
         border: none;
       }
       button {
         font-family: var(--sans-serif);
-        font-size: 0.9rem;
+        font-size: var(--font-size-sm);
         padding: 20px;
         border: none;
         border-radius: 0px 3px 3px 0px;
@@ -46,12 +47,22 @@
       }
     }
     #result-container {
+      position: absolute;
+      top: 140px;
+      display: flex;
+      flex-direction: row;
       background-color: white;
-      color: black;
-      padding: 20px;
-      &:hover {
-        background-color: var(--color-light-gray);
-        cursor: pointer;
+      font-family: var(--sans-serif);
+      a {
+        background-color: white;
+        color: black;
+        border-radius: 1px;
+        padding: 20px;
+        text-decoration: none;
+        &:hover {
+          background-color: var(--color-light-gray);
+          cursor: pointer;
+        }
       }
     }
   }
@@ -62,35 +73,45 @@
     padding: 5%;
     h1,
     h2 {
-      font-size: 1.5rem;
+      font-size: var(--font-size-2xl);
     }
     p {
-      font-size: 0.5rem;
+      font-size: var(--font-size-xsm);
     }
 
     #searchbar-container {
       #searchbar {
         #icon-container {
-          padding: 10px;
+          padding: 1.5px;
+          height: 50%;
         }
         input {
           font-family: var(--sans-serif);
-          font-size: 0.6rem;
+          font-size: var(--font-size-xsm);
           padding: 10px;
+          height: 50%;
         }
         button {
           font-size: 0.6rem;
+          height: 50%;
           padding: 10px;
         }
       }
       #result-container {
-        background-color: white;
+        background-color: transparent;
         color: black;
-        padding: 10px;
-
+        padding: 0px;
+        flex-direction: row;
+        max-width: 300px;
+        left: 0px;
+        top: 70px;
+        gap: 5px;
         &:hover {
           background-color: var(--color-light-gray);
           cursor: pointer;
+        }
+        a {
+          padding: 5px;
         }
       }
     }
