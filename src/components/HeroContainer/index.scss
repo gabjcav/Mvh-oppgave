@@ -9,36 +9,40 @@
 
   .hero-title {
     font-family: var(--serif);
-    font-size: var(--font-size-6xl);
+    font-size: var(--font-size-7xl);
     font-weight: 300;
   }
   p {
     font-family: var(--sans-serif);
+    font-size: var(--font-size-lg);
   }
   #searchbar-container {
-    display: flex;
-    flex-direction: column;
+    display: block;
     position: relative;
     #searchbar {
       margin-top: 3%;
       display: flex;
       flex: row;
-      max-width: 30%;
+      max-width: 100%;
       #search-icon {
         border-radius: 3px 0px 0px 3px;
-        padding: 20px;
         background-color: white;
+        padding: 20px;
       }
       #search-input {
         font-family: var(--sans-serif);
-        font-size: var(--font-size-sm);
-        padding: 20px;
+        font-size: var(--font-size-md);
         border: none;
+        max-width: 65%;
+        min-width: 50%;
+        padding: 20px;
       }
       #search-btn {
         font-family: var(--sans-serif);
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-md);
         padding: 20px;
+        max-width: 15%;
+        text-align: center;
         border: none;
         border-radius: 0px 3px 3px 0px;
         background-color: var(--color-purple);
@@ -52,11 +56,13 @@
     }
     #result-container {
       position: absolute;
-      top: 140px;
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      justify-content: flex-end;
+      top: 100%;
       background-color: white;
       font-family: var(--sans-serif);
+      box-shadow: 0px 0px 3px 0px black;
       a {
         background-color: white;
         color: black;
@@ -74,7 +80,6 @@
 
 @media (max-width: 768px) {
   #hero-container {
-    padding: 5%;
     .hero-title {
       font-size: var(--font-size-2xl);
     }
@@ -84,31 +89,34 @@
 
     #searchbar-container {
       #searchbar {
-        #icon-container {
-          padding: 1.5px;
-          height: 50%;
+        #search-icon {
+          border-radius: 3px 0px 0px 3px;
+          padding: 0px;
+          background-color: white;
+
+          img {
+            margin-top: 50%;
+          }
         }
-        input {
+        #search-input {
           font-family: var(--sans-serif);
           font-size: var(--font-size-xsm);
-          padding: 10px;
-          height: 50%;
         }
-        button {
+        #search-btn {
           font-size: 0.6rem;
-          height: 50%;
-          padding: 10px;
+          height: 100%;
         }
       }
       #result-container {
         background-color: transparent;
         color: black;
         padding: 0px;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-content: space-around;
         max-width: 300px;
-        left: 0px;
-        top: 70px;
-        gap: 5px;
+        left: 0;
+        top: 100%;
         &:hover {
           background-color: var(--color-light-gray);
           cursor: pointer;
