@@ -1,0 +1,8 @@
+{
+  "short_name": "MVH-oppgave",
+  "name": "Oppgave for Mvh",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

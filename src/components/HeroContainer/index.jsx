@@ -36,6 +36,7 @@ const HeroContainer = () => {
             ) {
               return value;
             }
+            return "";
           })
           .map((title) => {
             return (
