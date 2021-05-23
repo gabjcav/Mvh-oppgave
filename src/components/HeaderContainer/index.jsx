@@ -7,15 +7,15 @@ const HeaderContainer = () => {
     <header>
       <nav>
         <a href="/">
-          <img src={mvhLogo} alt="" />
+          <img src={mvhLogo} alt="Company logo" />
         </a>
         <div id="container">
           <a id="faq-link" href="/">
-            Ofte stile spørsmål
+            Ofte stilte spørsmål
           </a>
           <button>
-            <img src={iconUser} alt="" />
-            <p>Gabriel Cavallaro</p>
+            <img src={iconUser} alt="User icon" />
+            <p>GABRIEL CAVALLARO</p>
           </button>
         </div>
       </nav>

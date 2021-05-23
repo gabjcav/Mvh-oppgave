@@ -11,11 +11,12 @@
     justify-content: space-around;
     gap: 15px;
     article {
-      background-color: #f0f0f0;
+      background-color: var(--color-light-gray);
       padding: 10px;
       height: 60px;
       min-width: 15%;
       display: flex;
+      font-size: 1.2rem;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -30,9 +31,9 @@
           transform: rotateY(180deg);
           width: 20px;
           height: 20px;
-          &:hover {
-            transform: scale(1.2), rotateY(180deg);
-          }
+        }
+        &:hover {
+          border: 2px solid var(--color-light-green);
         }
       }
       p {
