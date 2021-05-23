@@ -8,12 +8,12 @@ const HeroContainer = () => {
 
   return (
     <section id="hero-container">
-      <h1>Reklame, teknologi </h1>
-      <h2>og design</h2>
+      <h1 className="hero-title">Reklame, teknologi </h1>
+      <h2 className="hero-title">og design</h2>
       <p>Lorem ipsum dolor sit amet</p>
       <div id="searchbar-container">
         <div id="searchbar">
-          <label id="icon-container" htmlFor="search-input">
+          <label id="search-icon" htmlFor="search-input">
             <img src={iconSearch} alt="Icon for searchbar." />
           </label>
           <input
@@ -24,7 +24,7 @@ const HeroContainer = () => {
             id="search-input"
             placeholder="Hva leter du etter?"
           />
-          <button>Søk</button>
+          <button id="search-btn">Søk</button>
         </div>
 
         {/* SEARCHBAR AUTOCOMPLETE */}

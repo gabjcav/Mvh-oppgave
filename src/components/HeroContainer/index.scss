@@ -7,8 +7,7 @@
   color: white;
   padding: 10%;
 
-  h1,
-  h2 {
+  .hero-title {
     font-family: var(--serif);
     font-size: var(--font-size-6xl);
     font-weight: 300;
@@ -25,18 +24,18 @@
       display: flex;
       flex: row;
       max-width: 30%;
-      #icon-container {
+      #search-icon {
         border-radius: 3px 0px 0px 3px;
         padding: 20px;
         background-color: white;
       }
-      input {
+      #search-input {
         font-family: var(--sans-serif);
         font-size: var(--font-size-sm);
         padding: 20px;
         border: none;
       }
-      button {
+      #search-btn {
         font-family: var(--sans-serif);
         font-size: var(--font-size-sm);
         padding: 20px;
@@ -44,6 +43,11 @@
         border-radius: 0px 3px 3px 0px;
         background-color: var(--color-purple);
         color: white;
+        transition: 0.2s ease;
+        &:hover {
+          color: var(--color-purple);
+          background-color: white;
+        }
       }
     }
     #result-container {
@@ -71,8 +75,7 @@
 @media (max-width: 768px) {
   #hero-container {
     padding: 5%;
-    h1,
-    h2 {
+    .hero-title {
       font-size: var(--font-size-2xl);
     }
     p {
