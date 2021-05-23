@@ -31,6 +31,7 @@ footer {
 
     li {
       margin-bottom: 10px;
+      margin-left: 5px;
       p {
         margin-bottom: 10px;
         color: black;
@@ -38,23 +39,14 @@ footer {
         font-weight: bold;
       }
 
-      @keyframes lineFade {
-        0% {
-          color: #464646;
-          text-decoration: underline;
-        }
-        100% {
-          text-decoration: none;
-          color: var(--color-purple);
-        }
-      }
       a {
         color: #464646;
         text-decoration: underline;
         text-underline-offset: 4px;
         text-decoration-color: var(--color-purple);
         &:hover {
-          animation: lineFade 3s ease;
+          text-decoration: none;
+          color: var(--color-purple);
         }
       }
     }
@@ -63,8 +55,15 @@ footer {
 
 @media (max-width: 768px) {
   footer {
+    padding: 10px;
+    #mail-link-container {
+      #mail-link {
+        font-size: 0.8rem;
+      }
+    }
     li {
-      font-size: 0.8rem;
+      text-underline-offset: 2px;
+      font-size: 0.5rem;
     }
     #press {
       margin-left: 5%;

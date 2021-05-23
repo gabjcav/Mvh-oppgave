@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./index.scss";
 import iconSearch from "../../img/icon-search.svg";
 import { subjectData } from "../../config/subjectData";
-
+import { v4 as uuidv4 } from "uuid";
 const HeroContainer = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  console.log(searchTerm);
+
   return (
     <section id="hero-container">
       <h1>Reklame, teknologi </h1>
@@ -21,7 +21,7 @@ const HeroContainer = () => {
               setSearchTerm(event.target.value);
             }}
             type="text"
-            placeholder="Hva Leter du etter?"
+            placeholder="Hva leter du etter?"
           />
           <button>Søk</button>
         </div>
@@ -30,7 +30,7 @@ const HeroContainer = () => {
         {subjectData
           .filter((value) => {
             if (searchTerm === "") {
-              return;
+              return "";
             } else if (
               value.toLowerCase().includes(searchTerm?.toLowerCase())
             ) {
@@ -39,9 +39,9 @@ const HeroContainer = () => {
           })
           .map((title) => {
             return (
-              <div id="result-container">
+              <a href="/" key={uuidv4()} id="result-container">
                 <p id="result">{title}</p>
-              </div>
+              </a>
             );
           })}
       </div>
