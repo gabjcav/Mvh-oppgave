@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./index.scss";
 import iconSearch from "../../img/icon-search.svg";
-import { subjectData } from "../../utils/subjectData";
+import { subjectData } from "../../data/subjectData";
 import { v4 as uuidv4 } from "uuid";
+
 const HeroContainer = () => {
   const [searchTerm, setSearchTerm] = useState("");
 

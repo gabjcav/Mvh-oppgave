@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import iconArrow from "../../img/icon-arrow.svg";
-import { subjectData } from "../../utils/subjectData";
+import { subjectData } from "../../data/subjectData";
 import { v4 as uuidv4 } from "uuid";
 const SubjectsContainer = () => {
   return (

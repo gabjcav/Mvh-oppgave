@@ -33,7 +33,7 @@
         font-family: var(--sans-serif);
         font-size: var(--font-size-md);
         border: none;
-        max-width: 65%;
+        max-width: 100%;
         min-width: 50%;
         padding: 20px;
       }
@@ -81,10 +81,10 @@
 @media (max-width: 768px) {
   #hero-container {
     .hero-title {
-      font-size: var(--font-size-2xl);
+      font-size: var(--font-size-3xl);
     }
     p {
-      font-size: var(--font-size-xsm);
+      font-size: var(--font-size-sm);
     }
 
     #searchbar-container {

@@ -16,7 +16,7 @@ header {
       align-items: center;
       padding-right: 30px;
       #faq-link {
-        font-size: var(--font-size-xsm);
+        font-size: var(--font-size-sm);
         color: black;
         font-family: var(--sans-serif);
         border-radius: 5px;
@@ -30,7 +30,7 @@ header {
           color: var(--color-purple);
         }
       }
-      button {
+      #profile-btn {
         display: flex;
         flex-direction: row;
         height: 30px;
@@ -65,7 +65,7 @@ header {
         #faq-link {
           font-size: var(--font-size-2xsm);
         }
-        button {
+        #profile-btn {
           font-size: var(--font-size-2xsm);
         }
       }

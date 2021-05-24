@@ -13,7 +13,7 @@ const HeaderContainer = () => {
           <a id="faq-link" href="/">
             Ofte stilte spørsmål
           </a>
-          <button>
+          <button id="profile-btn">
             <img src={iconUser} alt="User icon" />
             <p>GABRIEL CAVALLARO</p>
           </button>
