@@ -91,19 +91,15 @@
       #searchbar {
         #search-icon {
           border-radius: 3px 0px 0px 3px;
-          padding: 0px;
+          padding: 10px;
           background-color: white;
-
-          img {
-            margin-top: 50%;
-          }
         }
         #search-input {
           font-family: var(--sans-serif);
           font-size: var(--font-size-xsm);
         }
         #search-btn {
-          font-size: 0.6rem;
+          font-size: var(--font-size-xsm);
           height: 100%;
         }
       }

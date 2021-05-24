@@ -29,7 +29,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
 
-    li {
+    .link-container {
       margin-bottom: 10px;
       margin-left: 5px;
       p {
@@ -39,11 +39,12 @@ footer {
         font-weight: bold;
       }
 
-      a {
+      .link {
         color: #464646;
         text-decoration: underline;
         text-underline-offset: 4px;
         text-decoration-color: var(--color-purple);
+        font-size: var(--font-size-sm);
         &:hover {
           text-decoration: none;
           color: var(--color-purple);
@@ -61,9 +62,14 @@ footer {
         font-size: var(--font-size-sm);
       }
     }
-    li {
-      text-underline-offset: 2px;
-      font-size: var(--font-size-xsm);
+    .list-container {
+      .link-container {
+        text-underline-offset: 2px;
+        font-size: var(--font-size-xsm);
+        .link {
+          font-size: var(--font-size-2xsm);
+        }
+      }
     }
     #press {
       margin-left: 5%;

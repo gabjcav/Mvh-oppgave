@@ -5,6 +5,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     #logo {
       padding-left: 30px;
     }
@@ -15,9 +16,9 @@ header {
       align-items: center;
       padding-right: 30px;
       #faq-link {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-xsm);
         color: black;
-
+        font-family: var(--sans-serif);
         border-radius: 5px;
         padding: 5px;
         transition: background-size 0.2s ease;

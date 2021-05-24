@@ -27,9 +27,11 @@
         text-align: center;
         font-family: var(--sans-serif);
         color: #949494;
+        min-width: 80%;
+        max-width: 90%;
       }
       img {
-        width: 100%;
+        max-width: 100%;
       }
     }
   }

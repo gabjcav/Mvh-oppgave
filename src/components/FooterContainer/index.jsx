@@ -11,39 +11,53 @@ const FooterContainer = () => {
       </div>
       <section className="list-container">
         <ul>
-          <li>
-            <p>MVH</p>
+          <li className="link-container">
+            <p className="link-title">MVH</p>
           </li>
-          <li>
-            <a href="/">Om Mvh</a>
+          <li className="link-container">
+            <a className="link" href="/">
+              Om Mvh
+            </a>
           </li>
-          <li>
-            <a href="/">Kontakt oss</a>
+          <li className="link-container">
+            <a className="link" href="/">
+              Kontakt oss
+            </a>
           </li>
-          <li>
-            <a href="/">Ofte stilte spørsmål</a>
+          <li className="link-container">
+            <a className="link" href="/">
+              Ofte stilte spørsmål
+            </a>
           </li>
         </ul>
         <ul>
-          <li>
-            <p>FOR DEG</p>
+          <li className="link-container">
+            <p className="link-title">FOR DEG</p>
           </li>
-          <li>
-            <a href="/">Registrering</a>
+          <li className="link-container">
+            <a className="link" href="/">
+              Registrering
+            </a>
           </li>
-          <li>
-            <a href="/">Betingelser</a>
+          <li className="link-container">
+            <a className="link" href="/">
+              Betingelser
+            </a>
           </li>
-          <li>
-            <a href="/">Min side</a>
+          <li className="link-container">
+            <a className="link" href="/">
+              Min side
+            </a>
           </li>
         </ul>
         <ul id="press">
-          <li>
-            <p>PRESSE</p>
+          <li className="link-container">
+            <p className="link-title">PRESSE</p>
           </li>
-          <li>
-            <a href="/">Kit</a>
+          <li className="link-container">
+            <a className="link" href="/">
+              Kit
+            </a>
           </li>
         </ul>
       </section>
