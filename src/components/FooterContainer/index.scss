@@ -2,7 +2,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 40px;
-  background-color: var(--color-darker-gray);
+  background-color: var(--color-gray);
   height: 15%;
 
   #mail-link-container {
@@ -40,7 +40,7 @@ footer {
       }
 
       .link {
-        color: #464646;
+        color: var(--color-dark-gray);
         text-decoration: underline;
         text-underline-offset: 4px;
         text-decoration-color: var(--color-purple);

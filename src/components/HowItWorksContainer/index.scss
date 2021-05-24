@@ -22,11 +22,12 @@
       flex-direction: column;
       h5 {
         font-family: var(--sans-serif);
+        color: var(--color-dark-gray);
       }
       p {
         text-align: center;
         font-family: var(--sans-serif);
-        color: #949494;
+        color: var(--color-darker-gray);
         min-width: 80%;
         max-width: 90%;
       }
